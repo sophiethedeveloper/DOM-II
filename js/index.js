@@ -49,4 +49,13 @@ function logSubmit(event) {
   const form = document.getElementById('contact');
   const log = document.getElementById('log');
   form.addEventListener('submit', logSubmit);
+
+  //8 -Select
+function logSelection(event) {
+    const customerName = document.getElementById('customerName');
+    const selection = event.target.value.substring(event.target.selectionStart, event.target.selectionEnd);
+    customerName.textContent = `Thank you for choosing us, ${selection}!`;
+  }
   
+  const customerInput = document.querySelector('input');
+  customerInput.addEventListener('select', logSelection);
