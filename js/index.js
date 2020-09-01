@@ -39,3 +39,14 @@ const boatImage = document.querySelector('.inverse-content img');
 boatImage.addEventListener('click', (event) => {
   event.target.src = 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80'
 })
+
+// 7- Submit
+function logSubmit(event) {
+    log.textContent = `Form Submitted! Time stamp: ${event.timeStamp}`;
+    event.preventDefault();
+  }
+  
+  const form = document.getElementById('contact');
+  const log = document.getElementById('log');
+  form.addEventListener('submit', logSubmit);
+  
