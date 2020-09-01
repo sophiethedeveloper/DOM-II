@@ -25,3 +25,10 @@ const keyListener = document.querySelector("#subject");
 keyListener.addEventListener('keydown', (e) => {
   keyListener.textContent += `${e.code}`
 })
+
+// 5 -Focus
+const focusListener = document.querySelector('input[type=text]');
+
+focusListener.addEventListener('focus', (event) => {
+  event.target.style.background = '#90ee90';
+})
