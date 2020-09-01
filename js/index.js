@@ -77,7 +77,6 @@ function zoom(event) {
   const el = document.querySelector('.lastBoat');
   el.onwheel = zoom;
 
-  
 //10 - MouseOver
 
 const coloredNav = document.querySelector('.nav')
