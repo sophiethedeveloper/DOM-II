@@ -81,6 +81,34 @@
         <div class="btn">Sign Me Up!</div>
       </div>
     </section>
+
+    <section class="contact-form">
+      <h2>Get in touch with us!</h2>
+      <form id="contact">
+        <label for="name">Full Name</label>
+        <input type="text" id="fname" name="firstname">
+    
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" >
+    
+        <label for="package">Select your package</label>
+        <select id="package" name="country">
+          <option value="first">---</option>
+          <option value="sun">Fun in the Sun</option>
+          <option value="mountain">Mountain Excursion</option>
+          <option value="island">Island Getaway</option>
+        </select>
+    
+        <label for="subject">Special Instructions</label>
+        <textarea id="subject" name="subject" style="height:200px"></textarea>
+        
+        <button type="submit">Submit</button>
+        <!-- <input type="submit" value="Submit"> -->
+      </form>
+      <p id="log"></p>
+      <p id="customerName"></p>
+  </section>
+  
   </div><!-- container -->
 
   <footer class="footer">
